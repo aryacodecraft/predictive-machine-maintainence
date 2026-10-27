@@ -1,0 +1,93 @@
+{
+  "metrics": {
+    "Logistic Regression": {
+      "Accuracy": 0.8245,
+      "Precision": 0.1417721519,
+      "Recall": 0.8235294118,
+      "F1": 0.2419006479,
+      "ROC-AUC": 0.906954086
+    },
+    "Decision Tree": {
+      "Accuracy": 0.9665,
+      "Precision": 0.5048543689,
+      "Recall": 0.7647058824,
+      "F1": 0.6081871345,
+      "ROC-AUC": 0.8774167276
+    },
+    "Random Forest": {
+      "Accuracy": 0.983,
+      "Precision": 0.8541666667,
+      "Recall": 0.6029411765,
+      "F1": 0.7068965517,
+      "ROC-AUC": 0.9619641335
+    }
+  },
+  "feature_importance": [
+    {
+      "Feature": "Rotational speed [rpm]",
+      "Importance": 0.3159793
+    },
+    {
+      "Feature": "Torque [Nm]",
+      "Importance": 0.2940877878
+    },
+    {
+      "Feature": "Tool wear [min]",
+      "Importance": 0.2003795816
+    },
+    {
+      "Feature": "Air temperature [K]",
+      "Importance": 0.1000953393
+    },
+    {
+      "Feature": "Process temperature [K]",
+      "Importance": 0.0700622545
+    },
+    {
+      "Feature": "Type_L",
+      "Importance": 0.0089138456
+    },
+    {
+      "Feature": "Type_M",
+      "Importance": 0.0067061741
+    },
+    {
+      "Feature": "Type_H",
+      "Importance": 0.003775717
+    }
+  ],
+  "test_size": 2000,
+  "test_failures": 68,
+  "confusion_matrices": {
+    "Logistic Regression": [
+      [
+        1593,
+        339
+      ],
+      [
+        12,
+        56
+      ]
+    ],
+    "Decision Tree": [
+      [
+        1881,
+        51
+      ],
+      [
+        16,
+        52
+      ]
+    ],
+    "Random Forest": [
+      [
+        1925,
+        7
+      ],
+      [
+        27,
+        41
+      ]
+    ]
+  }
+}

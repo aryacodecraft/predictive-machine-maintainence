@@ -1,0 +1,43 @@
+{
+  "target": "Machine failure",
+  "features": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "feature_order": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "excluded_leakage_columns": [
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "best_params": {
+    "classifier__max_depth": null,
+    "classifier__min_samples_leaf": 3,
+    "classifier__n_estimators": 120
+  },
+  "test_metrics": {
+    "Accuracy": 0.9795,
+    "Precision": 0.7076923076923077,
+    "Recall": 0.6764705882352942,
+    "F1": 0.6917293233082706,
+    "ROC-AUC": 0.9719926013883815
+  },
+  "test_size": 0.2,
+  "random_state": 42,
+  "cv_folds": 5,
+  "selection_metric": "recall",
+  "dataset": "UCI AI4I 2020 Predictive Maintenance Dataset"
+}
